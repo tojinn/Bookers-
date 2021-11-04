@@ -14,56 +14,56 @@
   <tbody>
    
    <tr>
-    <td>タイトルテストaaaaaaaaaaaaaaaaaa</td>
-    <td>ボディーテストaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+    <td>リーダブルコード</td>
+    <td>より良いコードを書くためのシンプルで実践的なテクニック</td>
     <td>Show</td>
     <td>Edit</td>
     <td>Destroy</td>
    </tr>
    
    <tr>
-    <td>タイトルテスト</td>
-    <td>ボディーテスト</td>
+    <td>トラブル知らずのシステム設計</td>
+    <td>システム設計の要点を図解で説明してくれます</td>
     <td>Show</td>
     <td>Edit</td>
     <td>Destroy</td>
    </tr>
    
    <tr>
-    <td>タイトルテスト</td>
-    <td>ボディーテスト</td>
+    <td>たのしいRuby</td>
+    <td>Rubyの入門におすすめです</td>
     <td>Show</td>
     <td>Edit</td>
     <td>Destroy</td>
    </tr>
    
    <tr>
-    <td>タイトルテスト</td>
-    <td>ボディーテスト</td>
+    <td>入門Git</td>
+    <td>	gitについての基本操作から内部構造まで解説してくれます</td>
     <td>Show</td>
     <td>Edit</td>
     <td>Destroy</td>
    </tr>
    
    <tr>
-    <td>タイトルテスト</td>
-    <td>ボディーテスト</td>
+    <td>アルゴリズム図鑑</td>
+    <td>アルゴリズムについてカラーイラストでしっかり解説してくれます</td>
     <td>Show</td>
     <td>Edit</td>
     <td>Destroy</td>
    </tr>
    
    <tr>
-    <td>タイトルテスト</td>
-    <td>ボディーテスト</td>
+    <td>達人プログラマー</td>
+    <td>プログラマ入門者は必読！</td>
     <td>Show</td>
     <td>Edit</td>
     <td>Destroy</td>
    </tr>
    
    <tr>
-    <td>タイトルテスト</td>
-    <td>ボディーテスト</td>
+    <td>データベース実践入門</td>
+    <td>効率的なSQL文を教えてくれます</td>
     <td>Show</td>
     <td>Edit</td>
     <td>Destroy</td>
@@ -72,5 +72,14 @@
  </table>
  
  <h2>New book</h2>
- 
+
+ <% form_with model:@Book, local:true do |f| %>
+  <h4>Title</h4>
+  <%= f.text_field :title %>
+
+  <h4>Body</h4>
+  <%= f.text_area :body %>
+
+  <%= f.submit 'Create Book' %>
+ <% end %>
 </body>
