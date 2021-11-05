@@ -84,3 +84,16 @@ td {
     line-height: 18px;
     margin: 33px;
 }
+
+div {
+    display: block;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    cursor: default;
+}
